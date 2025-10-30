@@ -1,0 +1,214 @@
+<sdf version='1.11'>
+  <model name='turtlebot3_burger'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>-0.0042900917488992484 0 0.03073385570625178 0 0 0</pose>
+        <mass>0.94473503999999997</mass>
+        <inertia>
+          <ixx>0.0071789628344259403</ixx>
+          <ixy>-1.2294101000000001e-05</ixy>
+          <ixz>0.00057674046782256146</ixz>
+          <iyy>0.0072180446925676524</iyy>
+          <iyz>-5.0120903999999997e-06</iyz>
+          <izz>0.0041385803581417109</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>-0.032000000000000001 0 0.080000000000000002 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14000000000000001 0.14000000000000001 0.14299999999999999</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__caster_back_link_collision_1'>
+        <pose>-0.081000000000000003 7.9632671073329338e-07 0.0050000003170681652 -1.5700000000000001 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.029999999999999999 0.0089999999999999993 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__base_scan_collision_2'>
+        <pose>-0.017000000000000001 0 0.17549999999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0315</length>
+            <radius>0.055</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>-0.032000000000000001 0 0.01 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://turtlebot3_description/meshes/bases/burger_base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <ambient>0.5 0.5 0.5 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__base_scan_visual_1'>
+        <pose>-0.032000000000000001 0 0.182 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://turtlebot3_description/meshes/sensors/lds.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.37500003 0.37500003 0.37500003 1</diffuse>
+          <ambient>0.37500003 0.37500003 0.37500003 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_left_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0 0.080000000000000002 0.033000000000000002 -1.5700000000000001 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>wheel_left_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel_left_link'>
+      <pose relative_to='wheel_left_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.02849894</mass>
+        <inertia>
+          <ixx>1.117558e-05</ixx>
+          <ixy>-4.2369783000000002e-11</ixy>
+          <ixz>-5.9381719000000002e-09</ixz>
+          <iyy>1.1192413e-05</iyy>
+          <iyz>-1.4400107e-11</iyz>
+          <izz>2.0712558000000001e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel_left_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.017999999999999999</length>
+            <radius>0.033000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='wheel_left_link_visual'>
+        <pose>0 0 0 1.5700000000000001 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://turtlebot3_description/meshes/wheels/left_tire.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.37500003 0.37500003 0.37500003 1</diffuse>
+          <ambient>0.37500003 0.37500003 0.37500003 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='wheel_right_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0 -0.080000000000000002 0.033000000000000002 -1.5700000000000001 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>wheel_right_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel_right_link'>
+      <pose relative_to='wheel_right_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.02849894</mass>
+        <inertia>
+          <ixx>1.117558e-05</ixx>
+          <ixy>-4.2369783000000002e-11</ixy>
+          <ixz>-5.9381719000000002e-09</ixz>
+          <iyy>1.1192413e-05</iyy>
+          <iyz>-1.4400107e-11</iyz>
+          <izz>2.0712558000000001e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel_right_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.017999999999999999</length>
+            <radius>0.033000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='wheel_right_link_visual'>
+        <pose>0 0 0 1.5700000000000001 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://turtlebot3_description/meshes/wheels/right_tire.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.37500003 0.37500003 0.37500003 1</diffuse>
+          <ambient>0.37500003 0.37500003 0.37500003 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='caster_back_joint' attached_to='base_link'>
+      <pose>-0.081000000000000003 0 -0.0040000000000000001 -1.5700000000000001 0 0</pose>
+    </frame>
+    <frame name='caster_back_link' attached_to='caster_back_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='imu_joint' attached_to='base_link'>
+      <pose>-0.032000000000000001 0 0.068000000000000005 0 0 0</pose>
+    </frame>
+    <frame name='imu_link' attached_to='imu_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='scan_joint' attached_to='base_link'>
+      <pose>-0.032000000000000001 0 0.17199999999999999 0 0 0</pose>
+    </frame>
+    <frame name='base_scan' attached_to='scan_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='base_joint' attached_to='base_footprint'>
+      <pose>0 0 0.01 0 0 0</pose>
+    </frame>
+    <frame name='base_link' attached_to='base_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <plugin name="gz::sim::v8::systems::DiffDrive" filename="gz-sim-diff-drive-system">
+      <left_joint>wheel_left_joint</left_joint>
+      <right_joint>wheel_right_joint</right_joint>
+      <wheel_separation>0.160</wheel_separation>
+      <wheel_radius>0.033</wheel_radius>
+      <topic>cmd_vel</topic>
+      <odom_topic>odometry</odom_topic>
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <max_linear_speed>0.5</max_linear_speed>
+      <max_angular_speed>2.0</max_angular_speed>
+      <odom_publish_frequency>50</odom_publish_frequency>
+    </plugin>
+
+
+  </model>
+</sdf>

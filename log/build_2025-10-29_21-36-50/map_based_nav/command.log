@@ -1,0 +1,2 @@
+Invoking command in '/home/becacoli/map_based/build/map_based_nav': /usr/bin/cmake /home/becacoli/map_based/src/map_based_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/becacoli/map_based/install/map_based_nav
+Invoked command in '/home/becacoli/map_based/build/map_based_nav' returned '1': /usr/bin/cmake /home/becacoli/map_based/src/map_based_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/becacoli/map_based/install/map_based_nav

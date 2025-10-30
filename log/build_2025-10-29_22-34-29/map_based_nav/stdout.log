@@ -1,0 +1,32 @@
+running develop
+Removing /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map-based-nav.egg-link (link to .)
+running egg_info
+writing ../../build/map_based_nav/map_based_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/map_based_nav/map_based_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/map_based_nav/map_based_nav.egg-info/entry_points.txt
+writing requirements to ../../build/map_based_nav/map_based_nav.egg-info/requires.txt
+writing top-level names to ../../build/map_based_nav/map_based_nav.egg-info/top_level.txt
+reading manifest file '../../build/map_based_nav/map_based_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/map_based_nav/map_based_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+copying map_based_nav/rrt_planner.py -> /home/becacoli/map_based/build/map_based_nav/build/lib/map_based_nav
+running install
+running install_lib
+creating /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav
+copying /home/becacoli/map_based/build/map_based_nav/build/lib/map_based_nav/__init__.py -> /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav
+copying /home/becacoli/map_based/build/map_based_nav/build/lib/map_based_nav/rrt_planner.py -> /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav
+byte-compiling /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav/rrt_planner.py to rrt_planner.cpython-312.pyc
+running install_data
+copying resource/map_based_nav -> /home/becacoli/map_based/install/map_based_nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav
+copying launch/bringup_gz_tb3_rrt.launch.py -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/launch
+copying launch/rrt_nav.launch.py -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/launch
+copying worlds/tb3_world.sdf -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/worlds
+copying models/tb3_gz.sdf -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/models
+running install_egg_info
+Copying ../../build/map_based_nav/map_based_nav.egg-info to /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map_based_nav-0.1.0-py3.12.egg-info
+running install_scripts
+Installing rrt_planner script to /home/becacoli/map_based/install/map_based_nav/lib/map_based_nav
+writing list of installed files to '/home/becacoli/map_based/build/map_based_nav/install.log'

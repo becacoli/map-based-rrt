@@ -1,0 +1,10 @@
+[0.007s] Invoking command in '/home/becacoli/map_based/build/map_based_nav': /usr/bin/cmake /home/becacoli/map_based/src/map_based_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/becacoli/map_based/install/map_based_nav
+[0.014s] [33mCMake Warning:
+[0.014s]   Ignoring extra path from command line:
+[0.014s] 
+[0.014s]    "/home/becacoli/map_based/src/map_based_nav"
+[0.014s] 
+[0.014s] [0m
+[0.014s] [0mCMake Error: The source directory "/home/becacoli/map_based/src/map_based_nav" does not appear to contain CMakeLists.txt.
+[0.014s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.015s] Invoked command in '/home/becacoli/map_based/build/map_based_nav' returned '1': /usr/bin/cmake /home/becacoli/map_based/src/map_based_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/becacoli/map_based/install/map_based_nav

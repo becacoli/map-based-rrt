@@ -1,0 +1,55 @@
+<sdf version="1.7">
+  <model name="tb3">
+    <pose>0 0 0.05 0 0 0</pose>
+    <static>false</static>
+
+    <link name="base_link">
+      <inertial><mass>1.0</mass>
+        <inertia><ixx>0.01</ixx><iyy>0.01</iyy><izz>0.02</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+      </inertial>
+      <collision name="base_col">
+        <geometry><box><size>0.14 0.14 0.05</size></box></geometry>
+      </collision>
+      <visual name="base_vis">
+        <geometry><box><size>0.14 0.14 0.05</size></box></geometry>
+        <material><ambient>0.1 0.4 0.6 1</ambient></material>
+      </visual>
+    </link>
+
+    <link name="wheel_left">
+      <pose>0 0.08 0.033 0 1.5708 0</pose>
+      <collision name="col"><geometry><cylinder><radius>0.033</radius><length>0.02</length></cylinder></geometry></collision>
+      <visual name="vis"><geometry><cylinder><radius>0.033</radius><length>0.02</length></cylinder></geometry></visual>
+    </link>
+
+    <link name="wheel_right">
+      <pose>0 -0.08 0.033 0 1.5708 0</pose>
+      <collision name="col"><geometry><cylinder><radius>0.033</radius><length>0.02</length></cylinder></geometry></collision>
+      <visual name="vis"><geometry><cylinder><radius>0.033</radius><length>0.02</length></cylinder></geometry></visual>
+    </link>
+
+    <joint name="left_wheel_joint" type="revolute">
+      <parent>base_link</parent><child>wheel_left</child>
+      <axis><xyz>0 1 0</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+    </joint>
+
+    <joint name="right_wheel_joint" type="revolute">
+      <parent>base_link</parent><child>wheel_right</child>
+      <axis><xyz>0 1 0</xyz><limit><lower>-1e16</lower><upper>1e16</upper></limit></axis>
+    </joint>
+
+    <plugin name="diff_drive" filename="gz-sim-diff-drive-system">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.16</wheel_separation>
+      <wheel_radius>0.033</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <topic>cmd_vel</topic>            <!-- GZ: /model/tb3/cmd_vel -->
+      <odom_topic>odometry</odom_topic> <!-- GZ: /model/tb3/odometry -->
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <max_linear_speed>0.5</max_linear_speed>
+      <max_angular_speed>2.0</max_angular_speed>
+    </plugin>
+  </model>
+</sdf>

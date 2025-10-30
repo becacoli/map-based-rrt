@@ -1,0 +1,21 @@
+[0.701s] Invoking command in '/home/becacoli/map_based/build/map_based_nav': PYTHONPATH=/home/becacoli/map_based/build/map_based_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/becacoli/map_based/build/map_based_nav/build --no-deps symlink_data --force
+[0.969s] running develop
+[1.138s] running egg_info
+[1.155s] writing map_based_nav.egg-info/PKG-INFO
+[1.155s] writing dependency_links to map_based_nav.egg-info/dependency_links.txt
+[1.155s] writing entry points to map_based_nav.egg-info/entry_points.txt
+[1.155s] writing requirements to map_based_nav.egg-info/requires.txt
+[1.156s] writing top-level names to map_based_nav.egg-info/top_level.txt
+[1.188s] reading manifest file 'map_based_nav.egg-info/SOURCES.txt'
+[1.188s] writing manifest file 'map_based_nav.egg-info/SOURCES.txt'
+[1.203s] running build_ext
+[1.205s] Creating /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map-based-nav.egg-link (link to .)
+[1.206s] Installing rrt_planner script to /home/becacoli/map_based/install/map_based_nav/lib/map_based_nav
+[1.206s] 
+[1.206s] Installed /home/becacoli/map_based/build/map_based_nav
+[1.206s] running symlink_data
+[1.206s] symbolically linking /home/becacoli/map_based/build/map_based_nav/resource/map_based_nav -> /home/becacoli/map_based/install/map_based_nav/share/ament_index/resource_index/packages
+[1.207s] symbolically linking /home/becacoli/map_based/build/map_based_nav/package.xml -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav
+[1.207s] creating /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/launch
+[1.207s] error: [Errno 2] No such file or directory: '/home/becacoli/map_based/install/map_based_nav/share/map_based_nav/launch/rrt_nav.launch.py'
+[1.231s] Invoked command in '/home/becacoli/map_based/build/map_based_nav' returned '1': PYTHONPATH=/home/becacoli/map_based/build/map_based_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/becacoli/map_based/build/map_based_nav/build --no-deps symlink_data --force

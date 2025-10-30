@@ -1,0 +1,2 @@
+[console_scripts]
+rrt_planner = map_based_nav.rrt_planner:main

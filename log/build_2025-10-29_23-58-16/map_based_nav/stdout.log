@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing map_based_nav.egg-info/PKG-INFO
+writing dependency_links to map_based_nav.egg-info/dependency_links.txt
+writing entry points to map_based_nav.egg-info/entry_points.txt
+writing requirements to map_based_nav.egg-info/requires.txt
+writing top-level names to map_based_nav.egg-info/top_level.txt
+reading manifest file 'map_based_nav.egg-info/SOURCES.txt'
+writing manifest file 'map_based_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/becacoli/map_based/install/map_based_nav/lib/python3.12/site-packages/map-based-nav.egg-link (link to .)
+Installing rrt_planner script to /home/becacoli/map_based/install/map_based_nav/lib/map_based_nav
+
+Installed /home/becacoli/map_based/build/map_based_nav
+running symlink_data
+symbolically linking /home/becacoli/map_based/build/map_based_nav/models/tb3_burger_converted.sdf -> /home/becacoli/map_based/install/map_based_nav/share/map_based_nav/models

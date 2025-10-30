@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: map-based-nav
+Version: 0.1.0
+Summary: RRT navigation for TurtleBot3 in Gazebo (ROS2 Jazzy)
+Maintainer: becacoli
+Maintainer-email: becacoli@example.com
+License: MIT
