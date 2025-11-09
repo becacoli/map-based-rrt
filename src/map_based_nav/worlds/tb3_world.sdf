@@ -22,22 +22,109 @@
       </link>
     </model>
 
-    <!-- Obstáculos exemplo (corredor estreito) -->
-    <model name="wall_left">
+    <model name="corridor1_left">
       <static>true</static>
-      <pose>0 1.0 0.5 0 0 0</pose>
+      <!-- centro: x=-0.5, y=0.80 -->
+      <pose>-0.5 0.80 0.5 0 0 0</pose>
       <link name="link">
-        <collision name="col"><geometry><box><size>3.0 0.1 1.0</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>3.0 0.1 1.0</size></box></geometry></visual>
+        <collision name="col">
+          <geometry><box><size>3.5 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>3.5 0.1 1.0</size></box></geometry>
+        </visual>
       </link>
     </model>
-    <model name="wall_right">
+
+    <model name="corridor1_right">
       <static>true</static>
-      <pose>0 -1.0 0.5 0 0 0</pose>
+      <!-- centro: x=-0.5, y=-0.80 -->
+      <pose>-0.5 -0.80 0.5 0 0 0</pose>
       <link name="link">
-        <collision name="col"><geometry><box><size>3.0 0.1 1.0</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>3.0 0.1 1.0</size></box></geometry></visual>
+        <collision name="col">
+          <geometry><box><size>3.5 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>3.5 0.1 1.0</size></box></geometry>
+        </visual>
       </link>
     </model>
+
+    <model name="corridor2_left">
+      <static>true</static>
+      <!-- centro: x=2.2, y=1.6, yaw ~ 35° -->
+      <pose>2.2 1.6 0.5 0 0 0.6</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><box><size>2.5 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>2.5 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor2_right">
+      <static>true</static>
+      <!-- centro: x=2.4, y=1.1, yaw ~ 35° -->
+      <pose>2.4 1.1 0.5 0 0 0.6</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><box><size>2.5 0.1 1.0</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>2.5 0.1 1.0</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="cylinder_left">
+      <static>true</static>
+      <pose>-1.0 2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+   
+    <model name="cylinder_right">
+      <static>true</static>
+      <pose>2.8 0.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <cylinder>
+              <radius>0.35</radius>
+              <length>1.0</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+
   </world>
 </sdf>
